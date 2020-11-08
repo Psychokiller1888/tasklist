@@ -16,11 +16,11 @@ return [
     (new Extend\Formatter)
         ->configure(function (Configurator $config) {
             $config->BBCodes->addCustom(
-                '[listtask]{TEXT1}[/listtask]',
+                '[checkbox]{TEXT1}[/checkbox]',
                 '<span><input type="checkbox" style="margin-right: 10px" disabled>{TEXT1}</span>'
             );
             $config->BBCodes->addCustom(
-                '[checktask]{TEXT2}[/checktask]',
+                '[checkbox=checked]{TEXT2}[/checkbox]',
                 '<span><input type="checkbox" style="margin-right: 10px" checked disabled>{TEXT2}</span>'
             );
         })
